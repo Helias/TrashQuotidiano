@@ -41,15 +41,25 @@
 
 					<div class="col-xs-12">
 
-						<div class="canvas"></div>
+						<div class="canvas" style="width:100%"></div>
 
 						<div class="text-center">
 							<br>
-							Testo:
-							<input type="text" class="form-control" ng-model='text' ng-change="addText()" placeholder="text">
+							Pre-titolo:
+							<input type="text" class="form-control" ng-model='pre_text' ng-change="addText()" placeholder="C'è poco da stare allegri">
+
+							Titolo 1:
+							<input type="text" class="form-control" ng-model='title1_text' ng-change="addText()" placeholder="Calano fatturato e pil">
+							
+							Titolo 2:
+							<input type="text" class="form-control" ng-model='title2_text' ng-change="addText()" placeholder="Ma aumentano i meme">
+
 							Dimensione del font:
 							<br>
-							<input type="number" ng-model="font_size" ng-change="addText()">
+							Pre-titolo:
+							<input type="number" ng-model="pre_font_size" ng-change="addText()">
+							Titolo:
+							<input type="number" ng-model="title_font_size" ng-change="addText()">
 						</div>
 
 						<br>
@@ -58,7 +68,11 @@
 								<button class="btn btn-large btn-primary" ng-click="create()"><h4>Save Image</h4></button>
 							</div>
 							<div class="col-xs-3 col-xs-offset-3">
-								<footer>Coded by <a href="http://github.com/Helias/TrashQuotidiano">Helias</a></footer>
+								<footer style="text-align: center">
+									Coded by <a href="http://github.com/Helias/">Helias</a>, <a href="https://github.com/aegroto/">aegroto</a>
+									<br>
+									<a href="http://github.com/Helias/TrashQuotidian">Source code (GitHub)</a>
+								</footer>
 							</div>
 						</div>
 					</div>
