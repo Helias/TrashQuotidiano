@@ -46,7 +46,7 @@
     	ctx.lineWidth = 1;
     	ctx.strokeStyle = "#000";
 
-      ctx.font = $scope.font_size + "px Impact";
+      ctx.font = $scope.font_size + "px URW Impact W01 Bold Condensed";
     	ctx.strokeText(text, x, y);
     	ctx.fillText(text, x, y);
     };
