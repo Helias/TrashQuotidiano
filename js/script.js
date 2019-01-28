@@ -32,7 +32,7 @@
     	let ctx = document.getElementById("myCanvas").getContext("2d");
 
       let img = document.getElementById("current_image");
-    	ctx.drawImage(img, 0, 0, width, height);
+      ctx.drawImage(img, 0, 0, width, height);
 
       $scope.drawText(ctx, $scope.pre_text, width/2, height/2.5, "rgb(192, 30, 37)", $scope.pre_font_size);
       $scope.drawText(ctx, $scope.title1_text, width/2, height/1.7, "rgb(35, 31, 32)", $scope.title_font_size);
@@ -56,8 +56,6 @@
     	ctx.fillText(text, x, y);
     };
 
-    $scope.addText();
-
     $scope.create = () => {
        let uri = document.getElementById('myCanvas').toDataURL("image/png");
        downloadImage(uri, "TrashQuotidiano.png");
@@ -78,6 +76,9 @@
     		link.click();
     }
 
-	});
+    angular.element(document).ready(() => {
+      $scope.addText();
+    });  
 
+	});
 }());
