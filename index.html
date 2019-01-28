@@ -1,0 +1,64 @@
+<html ng-app="TrashQuotidiano">
+	<head>
+		<title>TrashQuotidiano</title>
+
+		<meta charset="utf-8">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/select.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/select2.css">
+
+		<!-- Javascript -->
+		<script src="js/lib/angular.min.js"></script>
+		<script src="js/lib/ui-bootstrap.min.js"></script>
+		<script src="js/lib/angular-sanitize.js"></script>
+		<script src="js/lib/select.min.js"></script>
+
+		<script src="js/script.js"></script>
+
+	</head>
+	<body>
+	<div class="container">
+
+		<h2 class="text-center">TrashQuotidiano</h2>
+
+		<img id="current_image" src="img/TrashQuotidiano.png" style="display: none;">
+
+		<div ng-controller="MainController">
+
+				<div class="row">
+
+					<div class="col-xs-12">
+
+						<div class="canvas"></div>
+
+						<div class="text-center">
+							<br>
+							Testo:
+							<input type="text" class="form-control" ng-model='text' ng-change="addText()" placeholder="text">
+							Dimensione del font:
+							<br>
+							<input type="number" ng-model="font_size" ng-change="addText()">
+						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-xs-6">
+								<button class="btn btn-large btn-primary" ng-click="create()"><h4>Save Image</h4></button>
+							</div>
+							<div class="col-xs-3 col-xs-offset-3">
+								<footer>Coded by <a href="http://github.com/Helias/TrashQuotidiano">Helias</a></footer>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				
+
+			</div>
+
+		</div> <!-- end container -->
+	</body>
+</html>
